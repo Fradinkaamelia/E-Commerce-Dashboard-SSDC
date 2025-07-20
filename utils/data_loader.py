@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 
 # Lokasi folder data
-base_path = "data/data"
+base_path = "data"
 
 # --- Fungsi untuk download file dari Google Drive ---
 def download_file_from_google_drive(file_url, save_path):
