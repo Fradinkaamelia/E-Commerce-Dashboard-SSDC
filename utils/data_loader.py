@@ -25,13 +25,13 @@ def extract_zip(zip_path, extract_to):
 
 # --- Setup data ---
 def setup_data():
-    if not os.path.exists(base_path):
-        os.makedirs(base_path, exist_ok=True)
+    if not os.path.exists(DATA_DIR):
+        os.makedirs(DATA_DIR, exist_ok=True)
         # Ganti dengan link file Google Drive kamu
         zip_url = "https://drive.google.com/uc?export=download&id=1_3FfjZFp9o_6VyMxgmKm0QIsN0351RvC"
         zip_path = "data.zip"
         download_file_from_google_drive(zip_url, zip_path)
-        extract_zip(zip_path, base_path)
+        extract_zip(zip_path, DATA_DIR)
 
 def load_all_data(base_path="data"):
     setup_data()
