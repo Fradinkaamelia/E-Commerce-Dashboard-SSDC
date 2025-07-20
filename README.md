@@ -16,15 +16,25 @@ E-Commerce-Dashboard-SSDC/
 ├── data/
 
 │ ├── customers_dataset.csv
+
 │ ├── geolocation_dataset.csv
+
 │ ├── marketing_qualified_leads_dataset.csv
+
 │ ├── closed_deals_dataset.csv
+
 │ ├── order_items_dataset.csv
+
 │ ├── order_payments_dataset.csv
+
 │ ├── order_reviews_dataset.csv
+
 │ ├── orders_dataset.csv
+
 │ ├── product_category_name_translation.csv
+
 │ ├── products_dataset.csv
+
 │ └── sellers_dataset.csv
 
 ├── requirements.txt
