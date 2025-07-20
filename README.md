@@ -6,10 +6,15 @@ Proyek ini dikembangkan sebagai bentuk partisipasi dalam lomba **Sebelas Maret S
 ## 📁 Struktur Folder
 
 E-Commerce-Dashboard-SSDC/
+
 ├── app2.py
+
 ├── utils/
+
 │ └── data_loader.py
+
 ├── data/
+
 │ ├── customers_dataset.csv
 │ ├── geolocation_dataset.csv
 │ ├── marketing_qualified_leads_dataset.csv
@@ -21,6 +26,7 @@ E-Commerce-Dashboard-SSDC/
 │ ├── product_category_name_translation.csv
 │ ├── products_dataset.csv
 │ └── sellers_dataset.csv
+
 ├── requirements.txt
 
 
