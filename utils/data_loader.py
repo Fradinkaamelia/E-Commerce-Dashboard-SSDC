@@ -1,5 +1,37 @@
-import pandas as pd
 import os
+import zipfile
+import requests
+import pandas as pd
+
+# Lokasi folder data
+base_path = "data"
+
+# --- Fungsi untuk download file dari Google Drive ---
+def download_file_from_google_drive(file_url, save_path):
+    if not os.path.exists(save_path):
+        print("Downloading dataset from Google Drive...")
+        response = requests.get(file_url)
+        with open(save_path, 'wb') as f:
+            f.write(response.content)
+        print("Download complete.")
+
+# --- Fungsi untuk ekstrak zip ---
+def extract_zip(zip_path, extract_to):
+    if not os.path.exists(extract_to):
+        print("Extracting dataset...")
+        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+            zip_ref.extractall(extract_to)
+        print("Extraction complete.")
+
+# --- Setup data ---
+def setup_data():
+    if not os.path.exists(DATA_DIR):
+        os.makedirs(DATA_DIR, exist_ok=True)
+        # Ganti dengan link file Google Drive kamu
+        zip_url = "https://drive.google.com/uc?export=download&id=1_3FfjZFp9o_6VyMxgmKm0QIsN0351RvC"
+        zip_path = "data.zip"
+        download_file_from_google_drive(zip_url, zip_path)
+        extract_zip(zip_path, DATA_DIR)
 
 def load_all_data(base_path="data"):
     customers = pd.read_csv(os.path.join(base_path, 'customers_dataset.csv'))
