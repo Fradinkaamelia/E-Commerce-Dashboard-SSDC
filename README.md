@@ -6,22 +6,22 @@ Proyek ini dikembangkan sebagai bentuk partisipasi dalam lomba **Sebelas Maret S
 ## 📁 Struktur Folder
 
 E-Commerce-Dashboard-SSDC/
-├── app2.py                   # Main file untuk menjalankan dashboard
+├── app2.py
 ├── utils/
-│   └── data_loader.py        # Fungsi download & load dataset dari Google Drive
-├── data/                     # Folder berisi dataset (jika dijalankan secara lokal)
-│   ├── customers_dataset.csv
-│   ├── geolocation_dataset.csv
-│   ├── marketing_qualified_leads_dataset.csv
-│   ├── closed_deals_dataset.csv
-│   ├── order_items_dataset.csv
-│   ├── order_payments_dataset.csv
-│   ├── order_reviews_dataset.csv
-│   ├── orders_dataset.csv
-│   ├── product_category_name_translation.csv
-│   ├── products_dataset.csv
-│   └── sellers_dataset.csv
-├── requirements.txt          # Daftar dependensi yang dibutuhkan
+│ └── data_loader.py
+├── data/
+│ ├── customers_dataset.csv
+│ ├── geolocation_dataset.csv
+│ ├── marketing_qualified_leads_dataset.csv
+│ ├── closed_deals_dataset.csv
+│ ├── order_items_dataset.csv
+│ ├── order_payments_dataset.csv
+│ ├── order_reviews_dataset.csv
+│ ├── orders_dataset.csv
+│ ├── product_category_name_translation.csv
+│ ├── products_dataset.csv
+│ └── sellers_dataset.csv
+├── requirements.txt
 
 
 ## ⚙️ Cara Menjalankan Dashboard Secara Lokal
