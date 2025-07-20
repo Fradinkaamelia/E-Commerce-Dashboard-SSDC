@@ -34,6 +34,7 @@ def setup_data():
         extract_zip(zip_path, DATA_DIR)
 
 def load_all_data(base_path="data"):
+    setup_data()
     customers = pd.read_csv(os.path.join(base_path, 'customers_dataset.csv'))
     geolocation = pd.read_csv(os.path.join(base_path, 'geolocation_dataset.csv'))
     leads_qualified = pd.read_csv(os.path.join(base_path, 'marketing_qualified_leads_dataset.csv'))
